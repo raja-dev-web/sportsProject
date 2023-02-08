@@ -1,0 +1,25 @@
+<h2 class="blog-post-title mb-1">Score Card</h2>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Starting Time</th>
+      <th>Team A</th>
+      <th>Score</th>
+      <th>Team B</th>
+      <th>Minutes</th>
+    </tr>
+  </thead>
+  <tbody id="=table_body">
+    {% for game in games %}
+      <tr>
+        <td id="id_{{ game.id }}">{{ game.id }}</td>
+        <td id="starting_time_{{ game.id }}">{{ game.starting_time }}</td>
+        <td id="team_a_{{ game.id }}">{{ game.team_a }}</td>
+        <td id="score_{{ game.id }}">{{ game.score }}</td>
+        <td id="team_b_{{ game.id }}">{{ game.team_b }}</td>
+        <td id="minutes_{{ game.id }}">{{ game.minutes }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
