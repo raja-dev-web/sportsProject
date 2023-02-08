@@ -8,7 +8,7 @@ setInterval(function() {
                     updateElement(game)
                 )
         )
-    },20000
+    },1000
 );
 
 function updateElement(game){
@@ -31,5 +31,5 @@ function blinkUpdate(element, newValue, newColor='#00ff00') {
     // Set back to original color after timeout ms
     setTimeout(() => {
         element.style.color = previousColor
-    }, 3000)
+    }, 2000)
 }
